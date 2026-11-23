@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "copiloto",
+  "version": "${version}",
+  "name": "Copiloto",
+  "description": "Asistente con voz (pociones y armadura), contorno de monstruos de color y HUD editable, con menu.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.copiloto.CopilotoClient"],
+    "modmenu": ["com.copiloto.CopilotoModMenu"]
+  },
+  "mixins": ["copiloto.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}

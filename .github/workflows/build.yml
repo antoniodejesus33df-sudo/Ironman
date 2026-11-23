@@ -1,0 +1,56 @@
+name: build
+on: [push, workflow_dispatch]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Voces
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python3 gen_audio.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.12
+      - name: Compilar
+        run: |
+          set -o pipefail
+          gradle build --console=plain 2>&1 | tee build.log
+      - name: Diagnostico de nombres
+        if: always()
+        run: |
+          : > diag.txt
+          J=""
+          for f in $(find "$HOME" "$PWD" -name '*.jar' 2>/dev/null); do
+            if unzip -l "$f" 2>/dev/null | grep -q "net/minecraft/client/gui/Gui.class"; then J="$f"; break; fi
+          done
+          echo "jar: $J" >> diag.txt
+          if [ -n "$J" ]; then
+            javap -p -cp "$J" net.minecraft.client.gui.Gui | grep -iE "scoreboard|hotbar|selecteditem" >> diag.txt || true
+            javap -p -cp "$J" net.minecraft.client.renderer.ItemInHandRenderer | grep -i "renderArmWithItem" >> diag.txt || true
+            javap -p -cp "$J" net.minecraft.client.Minecraft | grep -i "shouldEntityAppearGlowing" >> diag.txt || true
+            javap -p -cp "$J" net.minecraft.world.entity.Entity | grep -i "getTeamColor" >> diag.txt || true
+          fi
+          tail -n 60 build.log >> diag.txt || true
+      - name: Publicar release
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "build-${{ github.run_number }}" build/libs/copiloto-*.jar \
+            --title "Copiloto build ${{ github.run_number }}" \
+            --notes-file diag.txt
+      - name: Reportar fallo
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "fallo-${{ github.run_number }}" --prerelease \
+            --title "Fallo ${{ github.run_number }}" --notes-file diag.txt
