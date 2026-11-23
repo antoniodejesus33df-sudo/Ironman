@@ -303,5 +303,205 @@
   "sounds": [
    "copiloto:rival_dead"
   ]
+ },
+ "low_zombie": {
+  "sounds": [
+   "copiloto:low_zombie"
+  ]
+ },
+ "low_skeleton": {
+  "sounds": [
+   "copiloto:low_skeleton"
+  ]
+ },
+ "low_creeper": {
+  "sounds": [
+   "copiloto:low_creeper"
+  ]
+ },
+ "low_spider": {
+  "sounds": [
+   "copiloto:low_spider"
+  ]
+ },
+ "low_cave_spider": {
+  "sounds": [
+   "copiloto:low_cave_spider"
+  ]
+ },
+ "low_enderman": {
+  "sounds": [
+   "copiloto:low_enderman"
+  ]
+ },
+ "low_witch": {
+  "sounds": [
+   "copiloto:low_witch"
+  ]
+ },
+ "low_slime": {
+  "sounds": [
+   "copiloto:low_slime"
+  ]
+ },
+ "low_drowned": {
+  "sounds": [
+   "copiloto:low_drowned"
+  ]
+ },
+ "low_husk": {
+  "sounds": [
+   "copiloto:low_husk"
+  ]
+ },
+ "low_stray": {
+  "sounds": [
+   "copiloto:low_stray"
+  ]
+ },
+ "low_pillager": {
+  "sounds": [
+   "copiloto:low_pillager"
+  ]
+ },
+ "low_vindicator": {
+  "sounds": [
+   "copiloto:low_vindicator"
+  ]
+ },
+ "low_evoker": {
+  "sounds": [
+   "copiloto:low_evoker"
+  ]
+ },
+ "low_ravager": {
+  "sounds": [
+   "copiloto:low_ravager"
+  ]
+ },
+ "low_phantom": {
+  "sounds": [
+   "copiloto:low_phantom"
+  ]
+ },
+ "low_blaze": {
+  "sounds": [
+   "copiloto:low_blaze"
+  ]
+ },
+ "low_ghast": {
+  "sounds": [
+   "copiloto:low_ghast"
+  ]
+ },
+ "low_magma_cube": {
+  "sounds": [
+   "copiloto:low_magma_cube"
+  ]
+ },
+ "low_wither_skeleton": {
+  "sounds": [
+   "copiloto:low_wither_skeleton"
+  ]
+ },
+ "low_piglin": {
+  "sounds": [
+   "copiloto:low_piglin"
+  ]
+ },
+ "low_piglin_brute": {
+  "sounds": [
+   "copiloto:low_piglin_brute"
+  ]
+ },
+ "low_zombified_piglin": {
+  "sounds": [
+   "copiloto:low_zombified_piglin"
+  ]
+ },
+ "low_hoglin": {
+  "sounds": [
+   "copiloto:low_hoglin"
+  ]
+ },
+ "low_zoglin": {
+  "sounds": [
+   "copiloto:low_zoglin"
+  ]
+ },
+ "low_guardian": {
+  "sounds": [
+   "copiloto:low_guardian"
+  ]
+ },
+ "low_elder_guardian": {
+  "sounds": [
+   "copiloto:low_elder_guardian"
+  ]
+ },
+ "low_shulker": {
+  "sounds": [
+   "copiloto:low_shulker"
+  ]
+ },
+ "low_silverfish": {
+  "sounds": [
+   "copiloto:low_silverfish"
+  ]
+ },
+ "low_endermite": {
+  "sounds": [
+   "copiloto:low_endermite"
+  ]
+ },
+ "low_vex": {
+  "sounds": [
+   "copiloto:low_vex"
+  ]
+ },
+ "low_warden": {
+  "sounds": [
+   "copiloto:low_warden"
+  ]
+ },
+ "low_wither": {
+  "sounds": [
+   "copiloto:low_wither"
+  ]
+ },
+ "low_ender_dragon": {
+  "sounds": [
+   "copiloto:low_ender_dragon"
+  ]
+ },
+ "low_zombie_villager": {
+  "sounds": [
+   "copiloto:low_zombie_villager"
+  ]
+ },
+ "low_bogged": {
+  "sounds": [
+   "copiloto:low_bogged"
+  ]
+ },
+ "low_breeze": {
+  "sounds": [
+   "copiloto:low_breeze"
+  ]
+ },
+ "low_creaking": {
+  "sounds": [
+   "copiloto:low_creaking"
+  ]
+ },
+ "low_player": {
+  "sounds": [
+   "copiloto:low_player"
+  ]
+ },
+ "low_enemy": {
+  "sounds": [
+   "copiloto:low_enemy"
+  ]
  }
 }

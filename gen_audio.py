@@ -19,11 +19,29 @@ for r in range(5, 50, 5):
     clips[f"rival_{r}"] = f"Rival al {r} por ciento"
 clips["rival_dead"] = "Objetivo neutralizado"
 
+# "<nombre> a baja vida" (clave = id del mob en Minecraft)
+MOBS = {
+    "zombie": "Zombi", "skeleton": "Esqueleto", "creeper": "Creeper", "spider": "Araña",
+    "cave_spider": "Araña de cueva", "enderman": "Enderman", "witch": "Bruja", "slime": "Slime",
+    "drowned": "Ahogado", "husk": "Zombi del desierto", "stray": "Esqueleto errante",
+    "pillager": "Saqueador", "vindicator": "Vindicador", "evoker": "Invocador",
+    "ravager": "Devastador", "phantom": "Fantasma", "blaze": "Blaze", "ghast": "Ghast",
+    "magma_cube": "Cubo de magma", "wither_skeleton": "Esqueleto wither", "piglin": "Piglin",
+    "piglin_brute": "Piglin bruto", "zombified_piglin": "Piglin zombi", "hoglin": "Hoglin",
+    "zoglin": "Zoglin", "guardian": "Guardián", "elder_guardian": "Guardián anciano",
+    "shulker": "Shulker", "silverfish": "Pez de plata", "endermite": "Endermita", "vex": "Vex",
+    "warden": "Warden", "wither": "Wither", "ender_dragon": "Dragón del End",
+    "zombie_villager": "Aldeano zombi", "bogged": "Bogged", "breeze": "Brisa",
+    "creaking": "Creaking", "player": "Jugador", "enemy": "Enemigo",
+}
+for k, v in MOBS.items():
+    clips[f"low_{k}"] = f"{v} a baja vida"
+
 # clips que llevan pitido de alerta delante; "hello" lleva sonido de arranque
-ALERT = {"hp_low"} | {f"armor_{k}_10" for k in pieces} | {f"rival_{r}" for r in (5, 10, 15, 20)}
+ALERT = {f"low_{k}" for k in MOBS} | {"hp_low"} | {f"armor_{k}_10" for k in pieces} | {f"rival_{r}" for r in (5, 10, 15, 20)}
 
 FX = ("aformat=sample_rates=22050:channel_layouts=mono,highpass=f=140,lowpass=f=8000,"
-      "equalizer=f=2800:t=q:w=1.2:g=5,aecho=0.8:0.6:35|70:0.3|0.2,volume=1.6")
+      "equalizer=f=2800:t=q:w=1.2:g=5,aecho=0.8:0.6:35|70:0.3|0.2,volume=4,alimiter=limit=0.95")
 PRE = "aformat=sample_rates=22050:channel_layouts=mono"
 
 
@@ -34,7 +52,7 @@ def ff(*args):
 # efectos de sonido
 ff("-f", "lavfi", "-i", "sine=frequency=1400:duration=0.07",
    "-f", "lavfi", "-i", "sine=frequency=1900:duration=0.07",
-   "-filter_complex", f"[0][1]concat=n=2:v=0:a=1,volume=0.5,{PRE}", "/tmp/beep.wav")
+   "-filter_complex", f"[0][1]concat=n=2:v=0:a=1,volume=0.8,{PRE}", "/tmp/beep.wav")
 ff("-f", "lavfi", "-i", "aevalsrc=0.4*sin(2*PI*(500*t+900*t*t)):d=0.45:s=22050",
    "-af", f"afade=t=out:st=0.35:d=0.1,{PRE}", "/tmp/boot.wav")
 

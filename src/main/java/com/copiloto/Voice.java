@@ -45,6 +45,6 @@ public final class Voice {
 
     private static void play(Minecraft mc, String key) {
         SoundEvent ev = SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("copiloto", key));
-        mc.getSoundManager().play(SimpleSoundInstance.forUI(ev, 1.0F));
+        mc.getSoundManager().play(SimpleSoundInstance.forUI(ev, 1.0F, 1.0F));
     }
 }
