@@ -2,5 +2,6 @@
   "key.copiloto.status": "Copiloto: decir estado",
   "key.copiloto.highlight": "Copiloto: marcar monstruos (on/off)",
   "key.copiloto.menu": "Copiloto: abrir menu",
-  "key.categories.copiloto": "Copiloto"
+  "key.categories.copiloto": "Copiloto",
+  "key.copiloto.hud": "Copiloto: Iron Man HUD (on/off)"
 }

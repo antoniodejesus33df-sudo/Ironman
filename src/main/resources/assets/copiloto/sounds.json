@@ -1,0 +1,307 @@
+{
+ "pots_0": {
+  "sounds": [
+   "copiloto:pots_0"
+  ]
+ },
+ "pots_1": {
+  "sounds": [
+   "copiloto:pots_1"
+  ]
+ },
+ "pots_2": {
+  "sounds": [
+   "copiloto:pots_2"
+  ]
+ },
+ "pots_3": {
+  "sounds": [
+   "copiloto:pots_3"
+  ]
+ },
+ "pots_4": {
+  "sounds": [
+   "copiloto:pots_4"
+  ]
+ },
+ "pots_5": {
+  "sounds": [
+   "copiloto:pots_5"
+  ]
+ },
+ "pots_6": {
+  "sounds": [
+   "copiloto:pots_6"
+  ]
+ },
+ "pots_7": {
+  "sounds": [
+   "copiloto:pots_7"
+  ]
+ },
+ "pots_8": {
+  "sounds": [
+   "copiloto:pots_8"
+  ]
+ },
+ "pots_9": {
+  "sounds": [
+   "copiloto:pots_9"
+  ]
+ },
+ "pots_10": {
+  "sounds": [
+   "copiloto:pots_10"
+  ]
+ },
+ "pots_11": {
+  "sounds": [
+   "copiloto:pots_11"
+  ]
+ },
+ "pots_12": {
+  "sounds": [
+   "copiloto:pots_12"
+  ]
+ },
+ "pots_13": {
+  "sounds": [
+   "copiloto:pots_13"
+  ]
+ },
+ "pots_14": {
+  "sounds": [
+   "copiloto:pots_14"
+  ]
+ },
+ "pots_15": {
+  "sounds": [
+   "copiloto:pots_15"
+  ]
+ },
+ "pots_16": {
+  "sounds": [
+   "copiloto:pots_16"
+  ]
+ },
+ "pots_17": {
+  "sounds": [
+   "copiloto:pots_17"
+  ]
+ },
+ "pots_18": {
+  "sounds": [
+   "copiloto:pots_18"
+  ]
+ },
+ "pots_19": {
+  "sounds": [
+   "copiloto:pots_19"
+  ]
+ },
+ "pots_20": {
+  "sounds": [
+   "copiloto:pots_20"
+  ]
+ },
+ "pots_21": {
+  "sounds": [
+   "copiloto:pots_21"
+  ]
+ },
+ "pots_22": {
+  "sounds": [
+   "copiloto:pots_22"
+  ]
+ },
+ "pots_23": {
+  "sounds": [
+   "copiloto:pots_23"
+  ]
+ },
+ "pots_24": {
+  "sounds": [
+   "copiloto:pots_24"
+  ]
+ },
+ "pots_25": {
+  "sounds": [
+   "copiloto:pots_25"
+  ]
+ },
+ "pots_26": {
+  "sounds": [
+   "copiloto:pots_26"
+  ]
+ },
+ "pots_27": {
+  "sounds": [
+   "copiloto:pots_27"
+  ]
+ },
+ "pots_28": {
+  "sounds": [
+   "copiloto:pots_28"
+  ]
+ },
+ "pots_29": {
+  "sounds": [
+   "copiloto:pots_29"
+  ]
+ },
+ "pots_30": {
+  "sounds": [
+   "copiloto:pots_30"
+  ]
+ },
+ "pots_31": {
+  "sounds": [
+   "copiloto:pots_31"
+  ]
+ },
+ "pots_32": {
+  "sounds": [
+   "copiloto:pots_32"
+  ]
+ },
+ "pots_33": {
+  "sounds": [
+   "copiloto:pots_33"
+  ]
+ },
+ "pots_34": {
+  "sounds": [
+   "copiloto:pots_34"
+  ]
+ },
+ "pots_35": {
+  "sounds": [
+   "copiloto:pots_35"
+  ]
+ },
+ "pots_36": {
+  "sounds": [
+   "copiloto:pots_36"
+  ]
+ },
+ "armor_helmet_50": {
+  "sounds": [
+   "copiloto:armor_helmet_50"
+  ]
+ },
+ "armor_helmet_25": {
+  "sounds": [
+   "copiloto:armor_helmet_25"
+  ]
+ },
+ "armor_helmet_10": {
+  "sounds": [
+   "copiloto:armor_helmet_10"
+  ]
+ },
+ "armor_chest_50": {
+  "sounds": [
+   "copiloto:armor_chest_50"
+  ]
+ },
+ "armor_chest_25": {
+  "sounds": [
+   "copiloto:armor_chest_25"
+  ]
+ },
+ "armor_chest_10": {
+  "sounds": [
+   "copiloto:armor_chest_10"
+  ]
+ },
+ "armor_legs_50": {
+  "sounds": [
+   "copiloto:armor_legs_50"
+  ]
+ },
+ "armor_legs_25": {
+  "sounds": [
+   "copiloto:armor_legs_25"
+  ]
+ },
+ "armor_legs_10": {
+  "sounds": [
+   "copiloto:armor_legs_10"
+  ]
+ },
+ "armor_boots_50": {
+  "sounds": [
+   "copiloto:armor_boots_50"
+  ]
+ },
+ "armor_boots_25": {
+  "sounds": [
+   "copiloto:armor_boots_25"
+  ]
+ },
+ "armor_boots_10": {
+  "sounds": [
+   "copiloto:armor_boots_10"
+  ]
+ },
+ "hp_low": {
+  "sounds": [
+   "copiloto:hp_low"
+  ]
+ },
+ "hello": {
+  "sounds": [
+   "copiloto:hello"
+  ]
+ },
+ "rival_5": {
+  "sounds": [
+   "copiloto:rival_5"
+  ]
+ },
+ "rival_10": {
+  "sounds": [
+   "copiloto:rival_10"
+  ]
+ },
+ "rival_15": {
+  "sounds": [
+   "copiloto:rival_15"
+  ]
+ },
+ "rival_20": {
+  "sounds": [
+   "copiloto:rival_20"
+  ]
+ },
+ "rival_25": {
+  "sounds": [
+   "copiloto:rival_25"
+  ]
+ },
+ "rival_30": {
+  "sounds": [
+   "copiloto:rival_30"
+  ]
+ },
+ "rival_35": {
+  "sounds": [
+   "copiloto:rival_35"
+  ]
+ },
+ "rival_40": {
+  "sounds": [
+   "copiloto:rival_40"
+  ]
+ },
+ "rival_45": {
+  "sounds": [
+   "copiloto:rival_45"
+  ]
+ },
+ "rival_dead": {
+  "sounds": [
+   "copiloto:rival_dead"
+  ]
+ }
+}

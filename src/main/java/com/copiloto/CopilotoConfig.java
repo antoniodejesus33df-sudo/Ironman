@@ -19,6 +19,15 @@ public class CopilotoConfig {
     public boolean lowHealthAlert = true;
     public int potAlertMax = 8;
 
+    // HUD Iron Man
+    public boolean ironHud = true;
+    public boolean compass = true;
+    public boolean vitalsPanel = true;
+    public boolean armorPanel = true;
+    public boolean rivalHud = true;
+    public boolean rivalAlerts = true;
+    public boolean menuOverlay = true;
+
     // HUD
     public boolean scoreboardVisible = true;
     public float scoreboardX = 0f;
